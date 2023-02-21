@@ -29,7 +29,7 @@ Prepare pipeline which:
 * Calculates: (sum of page views, sum of unique users) grouped by site, device type, and browser
 
 With the task you received python script which generates example data for you.
-To run the script and send data to `MinIO`:
+To run the script and send data to `MinIO` you need to do following:
 * set `MINIO_ROOT_USER` and `MINIO_ROOT_PASSWORD` environment variables.
 * deploy the `MinIO` instance using `docker-compose` (see `minio_deployment` folder).
 * create virtual environment and activate it
