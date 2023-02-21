@@ -36,3 +36,5 @@ To run the script and send data to `MinIO` you need to do following:
 * install packages listed in requirements.txt
 * run `python3 data_generator.py --help` to see available options
 
+Hints:
+* To set environment variables, you can run `export VARIABLE_NAME=variable_value`.
