@@ -52,5 +52,5 @@ docker run \
 	--volume "${PWD}":/home/jovyan/workspace \
 	jupyter/pyspark-notebook:1840ddc9dc35
 ```
-* If you have trouble accessing the JupyterLab in the browser ensure the ports are not in use. Ultimately, switch `--network="host"` to `-p 8888:8888`.
+* If you have trouble accessing the JupyterLab in the browser ensure the ports are not in use. Try running with `sudo` as well. Ultimately, switch `--network="host"` to `-p 8888:8888` (but this will require fixing communication with Kafka). You can modify `docker-compose.yml` to start Jupyter together with Kafka (as another service), then you don't need to run the command shown above.
 * Ensure you add `org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.1` package to `SparkSession` to allow Kafka support.
